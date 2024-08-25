@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.turbo
+VERSION
+.cache
+build/
+
+# Mac stuff
+.DS_Store

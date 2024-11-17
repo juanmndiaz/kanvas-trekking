@@ -1,4 +1,10 @@
+import './root.css';
+import type { LinksFunction } from '@remix-run/node';
 import { Links, LiveReload, Meta, Outlet, Scripts } from '@remix-run/react';
+
+export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: 'stylesheet' },
+];
 
 export default function App() {
   return (
@@ -10,7 +16,7 @@ export default function App() {
       </head>
       <body>
         <LiveReload />
-        <h1>Kanvas Trekking</h1>
+        <h1 className="text-red-600">Kanvas Trekking</h1>
         <Outlet />
 
         <Scripts />
